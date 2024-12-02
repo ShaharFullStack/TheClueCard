@@ -1,46 +1,83 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>מי שבר את הצעצוע?</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מי שבר את הצעצוע?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <!-- טקסט במקום תמונה -->
-     <div class="ColTitle"><h2>חשודים</h2></div>
-     <div class="square"><img src="./assest/images/charecters/purple.jpg"/></div>
-     <div class="square"><img src="./assest/images/charecters/pink.jpg"/></div>
-     <div class="square"><img src="./assest/images/charecters/blue.jpg"/></div>
-     <div class="square"><img src="./assest/images/charecters/green.jpg"/></div>
-     <div class="square"><img src="./assest/images/charecters/red.jpg"/></div>
-     <div class="square"><img src="./assest/images/charecters/yellow.jpg"/></div>
-     <div class="ColTitle"><h2>צעצועים</h2></div>
-     <div class="square"><img src="./assest/images/toys/dino.png"/></div>
-     <div class="square"><img src="./assest/images/toys/car.jpg"/></div>
-     <div class="square"><img src="./assest/images/toys/teddy.png"/></div>
-     <div class="square"><img src="./assest/images/toys/Potatohead.webp"/></div>
-     <div class="square"><img src="./assest/images/toys/Xylophone.png"/></div>
-     <div class="square"><img src="./assest/images/toys/ball.png"/></div>
-     <div class="ColTitle"><h2>רהיטים</h2></div>
-     <div class="square"><img src="./assest/images/furnitures/poolTable.png"/></div>
-     <div class="square"><img src="./assest/images/furnitures/desk.jpg"/></div>
-     <div class="square"><img src="./assest/images/furnitures/couch.jpg"/></div>
-     <div class="square"><img src="./assest/images/furnitures/piano.png"/></div>
-     <div class="square"><img src="./assest/images/furnitures/plant.webp"/></div>
-     <div class="square"><img src="./assest/images/furnitures/dinnerTable.webp"/></div>
-     <div class="ColTitle"><h2>שעה</h2></div>
-     <div class="time"> 11:00</div>
-     <div class="time">12:00</div>
-     <div class="time">01:00</div>
-     <div class="time">02:00</div>
-     <div class="time">03:00</div>
-     <div class="time">04:00</div>
-     <div class="ColTitle"><h2></h2></div>
-     <div class="time">05:00</div>
-  </div>
+    <div class="game-container">
+        <div class="section-title">חשודים</div>
+        <div class="game-item" data-category="suspect" data-name="purple">
+            <img src="./assest/images/charecters/purple.jpg" alt="Purple Character">
+        </div>
+        <div class="game-item" data-category="suspect" data-name="pink">
+            <img src="./assest/images/charecters/pink.jpg" alt="Pink Character">
+        </div>
+        <div class="game-item" data-category="suspect" data-name="blue">
+            <img src="./assest/images/charecters/blue.jpg" alt="Blue Character">
+        </div>
+        <div class="game-item" data-category="suspect" data-name="green">
+            <img src="./assest/images/charecters/green.jpg" alt="Green Character">
+        </div>
+        <div class="game-item" data-category="suspect" data-name="red">
+            <img src="./assest/images/charecters/red.jpg" alt="Red Character">
+        </div>
+        <div class="game-item" data-category="suspect" data-name="yellow">
+            <img src="./assest/images/charecters/yellow.jpg" alt="Yellow Character">
+        </div>
 
-  <script src="script.js"></script>
+        <div class="section-title">צעצועים</div>
+        <div class="game-item" data-category="toy" data-name="dino">
+            <img src="./assest/images/toys/dino.png" alt="Dinosaur">
+        </div>
+        <div class="game-item" data-category="toy" data-name="car">
+            <img src="./assest/images/toys/car.jpg" alt="Car">
+        </div>
+        <div class="game-item" data-category="toy" data-name="teddy">
+            <img src="./assest/images/toys/teddy.png" alt="Teddy Bear">
+        </div>
+        <div class="game-item" data-category="toy" data-name="potatohead">
+            <img src="./assest/images/toys/Potatohead.webp" alt="Potato Head">
+        </div>
+        <div class="game-item" data-category="toy" data-name="xylophone">
+            <img src="./assest/images/toys/Xylophone.png" alt="Xylophone">
+        </div>
+        <div class="game-item" data-category="toy" data-name="ball">
+            <img src="./assest/images/toys/ball.png" alt="Ball">
+        </div>
+
+        <div class="section-title">רהיטים</div>
+        <div class="game-item" data-category="furniture" data-name="pool-table">
+            <img src="./assest/images/furnitures/poolTable.png" alt="Pool Table">
+        </div>
+        <div class="game-item" data-category="furniture" data-name="desk">
+            <img src="./assest/images/furnitures/desk.jpg" alt="Desk">
+        </div>
+        <div class="game-item" data-category="furniture" data-name="couch">
+            <img src="./assest/images/furnitures/couch.jpg" alt="Couch">
+        </div>
+        <div class="game-item" data-category="furniture" data-name="piano">
+            <img src="./assest/images/furnitures/piano.png" alt="Piano">
+        </div>
+        <div class="game-item" data-category="furniture" data-name="plant">
+            <img src="./assest/images/furnitures/plant.webp" alt="Plant">
+        </div>
+        <div class="game-item" data-category="furniture" data-name="dinner-table">
+            <img src="./assest/images/furnitures/dinnerTable.webp" alt="Dinner Table">
+        </div>
+
+        <div class="section-title">זמן</div>
+        <div class="game-item time-item" data-category="time" data-time="11:00">11:00</div>
+        <div class="game-item time-item" data-category="time" data-time="12:00">12:00</div>
+        <div class="game-item time-item" data-category="time" data-time="01:00">01:00</div>
+        <div class="game-item time-item" data-category="time" data-time="02:00">02:00</div>
+        <div class="game-item time-item" data-category="time" data-time="03:00">03:00</div>
+        <div class="game-item time-item" data-category="time" data-time="04:00">04:00</div>
+        <div class="game-item time-item" data-category="time" data-time="05:00">05:00</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
