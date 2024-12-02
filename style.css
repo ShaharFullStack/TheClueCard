@@ -1,0 +1,86 @@
+body {
+  background-image: url(./assest/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+img {
+  mix-blend-mode: multiply;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: flex-start;
+  position: absolute;
+  align-items: right;
+  align-content: right;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 87, 244, 0.552);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.square.red, .time.red{
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  font-weight: bold;
+
+}
+
+.time {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.time:hover, .square:hover {
+  background-color: #a11db8;
+  color: navy;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0);
+  transform: scale(1.1);
+}
+
+.ColTitle {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: #fff 4px 6px 7px;
+  background-image: linear-gradient(180deg, #fac8c8, #ad6666);
+  margin:10px;
+}
